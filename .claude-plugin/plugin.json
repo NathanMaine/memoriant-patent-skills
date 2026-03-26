@@ -1,0 +1,29 @@
+{
+  "name": "memoriant-patent-skills",
+  "version": "1.0.0",
+  "description": "AI-powered patent workflow: search prior art, analyze patentability, draft applications (provisional/non-provisional/PCT), review against USPTO standards, and generate diagrams. 6 skills + 4 specialized agents.",
+  "author": {
+    "name": "Nathan Maine",
+    "url": "https://github.com/NathanMaine"
+  },
+  "homepage": "https://github.com/NathanMaine/memoriant-patent-platform",
+  "repository": "https://github.com/NathanMaine/memoriant-patent-skills",
+  "license": "MIT",
+  "keywords": ["patent", "prior-art", "USPTO", "intellectual-property", "patent-search", "patent-drafting", "patent-review", "legal", "IP"],
+  "skills": "./skills/",
+  "agents": "./agents/",
+  "userConfig": {
+    "patentsview_api_key": {
+      "description": "PatentsView API key (free from patentsview.org)",
+      "sensitive": true
+    },
+    "anthropic_api_key": {
+      "description": "Anthropic API key for Claude (recommended: Opus 4.6)",
+      "sensitive": true
+    },
+    "serpapi_key": {
+      "description": "SerpAPI key for Google Patents search (optional, paid)",
+      "sensitive": true
+    }
+  }
+}
