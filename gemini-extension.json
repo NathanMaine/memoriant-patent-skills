@@ -1,0 +1,31 @@
+{
+  "name": "memoriant-patent-skills",
+  "description": "AI-powered patent workflow: search prior art, analyze patentability, draft applications, review against USPTO standards, generate diagrams.",
+  "version": "1.0.0",
+  "skills": [
+    {
+      "name": "patent-search",
+      "path": "skills/patent-search/SKILL.md"
+    },
+    {
+      "name": "patent-draft",
+      "path": "skills/patent-draft/SKILL.md"
+    },
+    {
+      "name": "patent-review",
+      "path": "skills/patent-review/SKILL.md"
+    },
+    {
+      "name": "patent-diagrams",
+      "path": "skills/patent-diagrams/SKILL.md"
+    },
+    {
+      "name": "patent-pipeline",
+      "path": "skills/patent-pipeline/SKILL.md"
+    },
+    {
+      "name": "patent-config",
+      "path": "skills/patent-config/SKILL.md"
+    }
+  ]
+}

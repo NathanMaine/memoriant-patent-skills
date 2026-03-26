@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    {
+      "name": "memoriant-patent-skills",
+      "version": "1.0.0",
+      "source": "github:NathanMaine/memoriant-patent-skills"
+    }
+  ]
+}

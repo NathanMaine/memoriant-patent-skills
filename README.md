@@ -17,6 +17,26 @@ A Claude Code plugin that gives you a complete patent workflow — from inventio
 /install NathanMaine/memoriant-patent-skills
 ```
 
+## Cross-Platform Support
+
+This plugin works with multiple AI coding assistants:
+
+### Claude Code (Primary)
+```bash
+/install NathanMaine/memoriant-patent-skills
+```
+
+### OpenAI Codex CLI
+```bash
+git clone https://github.com/NathanMaine/memoriant-patent-skills.git ~/.codex/skills/patent
+codex --enable skills
+```
+
+### Gemini CLI
+```bash
+gemini extensions install https://github.com/NathanMaine/memoriant-patent-skills.git --consent
+```
+
 ## Skills
 
 | Skill | Command | What It Does |
@@ -77,6 +97,16 @@ A Claude Code plugin that gives you a complete patent workflow — from inventio
 - USPTO provisional application
 - USPTO non-provisional (utility) application
 - PCT international format
+
+## Examples
+
+Sample outputs showing what each skill produces:
+
+| Example | What it shows |
+|---------|--------------|
+| [sample-search-results.md](examples/sample-search-results.md) | Prior art search for "wireless power transfer for medical implants" — 5 patents with relevance analysis |
+| [sample-draft-provisional.md](examples/sample-draft-provisional.md) | Provisional patent application with abstract, background, description, 3 claims, and filing checklist |
+| [sample-review-findings.md](examples/sample-review-findings.md) | Review findings covering 101, 102, 103, 112(a), 112(b), and MPEP 608 with severity levels and suggestions |
 
 ## Full Platform
 
