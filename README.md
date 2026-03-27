@@ -75,11 +75,49 @@ gemini extensions install https://github.com/NathanMaine/memoriant-patent-skills
 
 ## Search Providers
 
-| Provider | Cost | Default |
-|----------|------|---------|
-| PatentsView | Free (API key required) | On |
-| USPTO Open Data Portal | Free | On |
-| SerpAPI (Google Patents) | Paid | Off (opt-in) |
+| Provider | Cost | Default | API Key |
+|----------|------|---------|---------|
+| PatentsView / PatentSearch | Free (API key required) | On | [Get key](https://patentsview.org/apis/keyrequest) |
+| USPTO Open Data Portal | Free (no key needed) | On | None |
+| SerpAPI (Google Patents) | Paid ($50/mo) | Off (opt-in) | [serpapi.com](https://serpapi.com) |
+
+### Setting Up PatentsView API Key (Free)
+
+PatentsView provides free access to 76M+ US patents. As of March 2026, PatentsView has migrated to the **USPTO Open Data Portal** and uses the new **PatentSearch API**.
+
+**Step 1: Request an API key**
+
+Go to: https://patentsview.org/apis/keyrequest
+
+Or directly: https://patentsview-support.atlassian.net/servicedesk/customer/portal/1/group/1/create/18
+
+**Step 2: Fill out the form**
+
+You'll need:
+- Your name
+- Your email address
+- A description of what you'll use the API for (e.g., "Prior art search for patent applications using Memoriant Patent Platform")
+
+**Step 3: Use the key**
+
+Once you receive your API key by email, set it as an environment variable:
+
+```bash
+export PATENTSVIEW_API_KEY=your-key-here
+```
+
+Or add it to your `.env` file:
+
+```
+PATENTSVIEW_API_KEY=your-key-here
+```
+
+**Usage limits:**
+- 45 requests per minute (our platform limits to 30/min to stay well under)
+- API keys do not expire
+- One key per user
+
+**Note:** If new API key grants are temporarily suspended during the USPTO migration, the platform still works with the USPTO Open Data Portal (no key required) and SerpAPI (paid).
 
 ## What It Covers
 
